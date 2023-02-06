@@ -1,0 +1,35 @@
+html {
+  background-color: $dt('alpine.backdrop.backgroundColor') !important;
+}
+
+html.dark {
+  background-color: $dt('alpine.backdrop.backgroundColor') !important;
+}
+
+html .document-driven-page {
+  background-color: $dt('color.white');
+  padding: $dt('space.12');
+  border-radius: $dt('size.6');
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+}
+
+html.dark .document-driven-page {
+  background-color: $dt('color.black');
+}
+
+/* Color scheme images helper classes */
+.light-img {
+  display: block;
+}
+.dark-img {
+  display: none;
+}
+
+@dark {
+  .dark-img {
+    display: block;
+  }
+  .light-img {
+    display: none;
+  }
+}

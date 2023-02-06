@@ -19,7 +19,8 @@
 	"forwardPorts": [ 3000 ],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "npm install && npm run dev"
+	"postCreateCommand": "npm install",
+	"postStartCommand": "npm run dev"
 
 	// Configure tool-specific properties.
 	// "customizations": {},

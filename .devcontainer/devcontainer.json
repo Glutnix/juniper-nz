@@ -13,14 +13,17 @@
 	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/pnpm:2": {}
+	},
+
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [ 3000 ],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "npm install",
-	"postStartCommand": "npm run dev"
+	"updateContentCommand": "pnpm install",
+	"postCreateCommand": "pnpm install"
 
 	// Configure tool-specific properties.
 	// "customizations": {},

@@ -4,7 +4,8 @@ node_modules
 .idea
 *.log*
 .nuxt
-.vscode
+.vscode/*
+!.vscode/tasks.json
 .DS_Store
 coverage
 dist

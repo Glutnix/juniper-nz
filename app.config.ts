@@ -1,13 +1,10 @@
-// const socialTitle = "🦨 Juniper the Skunktaur's Site 🦨";
-const socialDescription = 'Official site for your favourite four-armed skunktaur';
-
-const titleTemplateFunction = function (titleChunk: string): string {
+const titleTemplateFunction = function (titleChunk?: string): string {
   // If undefined or blank then we don't need the hyphen
-  return titleChunk ? `🦨 ${titleChunk} - Juniper's Site 🦨` : "🦨 Juniper the Skunktaur's Site 🦨";
-};
+  return titleChunk ? `🦨 ${titleChunk} - Juniper's Site 🦨` : "🦨 Juniper Skunktaur's Site 🦨";
+};      
+
 export default defineAppConfig({
   alpine: {
-    titleTemplate: titleTemplateFunction,
     title: '🦨 Juniper Skunktaur\'s Site 🦨',
     description: 'Official site for your favourite four-armed skunktaur',
     image: {
